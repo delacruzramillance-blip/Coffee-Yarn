@@ -1,0 +1,1037 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #AA6631;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: transparent;
+
+    z-index: 10;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+}
+
+nav p {
+    font-size: 25px;
+
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 25px;
+
+    margin-left: 35px;
+}
+
+nav a:hover {
+    color: #DEB58D;
+}
+
+/* MENU DROPDOWN */
+.menu-dropdown {
+    position: relative;
+    margin-left: 35px;
+}
+
+.menu-dropdown > a {
+    margin-left: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 140px;
+    background-color: #DEB58D;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    color: #714120;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #AA6631;
+    color: #DEB58D;
+}
+
+/* SHOW DROPDOWN */
+.menu-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+.imghome {
+    width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.home-content {
+    position: absolute;
+
+    top: 30%;
+    left: 10%;
+}
+
+.wel {
+    font-size: clamp(30px, 4vw, 50px);
+}
+
+.name {
+    font-size: clamp(50px, 8vw, 100px);
+}
+
+.des {
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+.home-btn {
+    width: 150px;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 15px;
+
+    color: black;
+
+    font-size: 17px;
+
+    background-color: #AA6631;
+
+    font-family: "Times New Roman", Times, serif;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.aboutPage {
+    background-color: #AA6631;
+
+    width: 100%;
+    min-height: 550px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+}
+
+.abouttext {
+    width: 55%;
+
+    text-align: center;
+}
+
+.story {
+    width: 100%;
+
+    font-size: clamp(17px, 2vw, 22px);
+
+    color: #DEB58D;
+
+    margin-top: 15px;
+
+    line-height: 2;
+
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: clamp(30px, 4vw, 40px);
+
+    color: #DEB58D;
+}
+
+
+/* =========================
+   STORY IMAGE
+========================= */
+
+.img-story {
+    width: min(500px, 40vw);
+    height: 500px;
+
+    object-fit: cover;
+    background: transparent;
+
+    margin-left: auto;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.missionPage {
+    width: 100%;
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px;
+}
+
+.img-mission {
+    width: min(400px, 40vw);
+    height: min(400px, 40vw);
+
+    object-fit: cover;
+
+    margin-left: 50px;
+
+    border-radius: 10px;
+}
+
+.misson {
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: 50px;
+
+    text-align: center;
+}
+
+.misson h1 {
+    font-size: clamp(45px, 6vw, 70px);
+
+    color: #DEB58D;
+}
+
+.mission1 {
+    width: 100%;
+
+    font-size: clamp(17px, 2vw, 22px);
+
+    color: #DEB58D;
+
+    margin-top: 15px;
+
+    line-height: 2;
+
+    letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   MENU PAGE
+========================= */
+.menuPage h2 {
+    font-size: 45px;
+    color: #DEB58D;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.cantainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.line1,
+.line2 {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+
+    background-color: #DEB58D;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.line3 {
+     margin: 0 auto;
+    width: 300px;
+    height: 500px;
+
+    background-color: #DEB58D;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+
+/* =========================
+   IMAGE OF COFFEE
+========================= */
+.image-container {
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   HOVER INFORMATION
+========================= */
+.image-info {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    color: #DEB58D;
+
+    text-align: center;
+
+    transform: translateY(100%);
+
+    transition: 0.3s ease;
+}
+
+.image-info h3 {
+    margin: 0 0 8px;
+
+    font-size: 22px;
+}
+
+.image-info p {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FOR HANGOVER (COFFEF INFO)
+========================= */
+.image-container:hover .image-info {
+    transform: translateY(0);
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+.add-btn {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #AA6631;
+    color: #DEB58D;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+.product-info {
+    padding: 15px 20px;
+}
+
+.coffee {
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+
+    color: #714120;
+}
+
+.price {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 17px;
+
+    color: #714120;
+}
+
+
+
+/* =========================
+   CART BUTTON
+========================= */
+
+.cart-btn {
+    border: none;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    margin-left: 25px;
+
+    transition: 0.2s;
+}
+
+.cart-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   CART BOX
+========================= */
+
+.cart-box {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(380px, 90vw);
+    height: 100vh;
+    background-color: #DEB58D;
+    padding: 30px;
+    z-index: 9999;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+
+    /* SCROLL */
+    overflow-y: auto;
+}
+
+
+/* =========================
+   SHOW CART
+========================= */
+
+.cart-box.active {
+    right: 0;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-cart {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 35px;
+
+    color: #AA6631;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   CART TITLE
+========================= */
+
+.cart-box h2 {
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    font-size: clamp(25px, 5vw, 32px);
+
+    color: #AA6631;
+}
+
+
+/* =========================
+   CART CONTENT
+========================= */
+
+.cart-items {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: clamp(16px, 3vw, 18px);
+
+    color: #AA6631;
+}
+
+.cart-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #AA6631;
+    text-align: left;
+}
+
+.cart-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #714120;
+}
+
+.cart-item p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #714120;
+}
+
+.remove-btn {
+    border: none;
+    background-color: #AA6631;
+    color: #DEB58D;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: "Times New Roman", Times, serif;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #714120;
+}
+
+.cart-total {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #AA6631;
+    text-align: right;
+    color: #714120;
+}
+
+.cart-total h3 {
+    font-size: 22px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #AA6631;
+    color: #DEB58D;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #714120;
+}
+
+/* ORDER SUCCESS */
+.order-success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.order-success.active {
+    display: flex;
+}
+
+.success-box {
+    width: 350px;
+    padding: 35px;
+    background-color: #DEB58D;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.success-box h2 {
+    color: #714120;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.success-box p {
+    color: #714120;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.success-box button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #AA6631;
+    color: #DEB58D;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success-box button:hover {
+    background-color: #714120;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #714120;
+    gap: 60px;
+}
+
+.contact-body {
+    width: 50%;
+}
+
+.contact-body h2 {
+    color: #DEB58D;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-body p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+.contact-us {
+    background: #AA6631;
+    border-radius: 15px;
+}
+
+.contact-us h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.contact-us textarea {
+    height: 130px;
+    resize: none;
+}
+
+.contact-us button {
+    padding: 13px 25px;
+    background: #DEB58D;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+.social-media {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-media h2 {
+    color: #DEB58D;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.social-top {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+
+.social-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: #DEB58D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   PHONE / SMALL SCREEN
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        min-height: 75px;
+
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav p {
+        font-size: 18px;
+
+        margin-left: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+
+        margin-left: 8px;
+    }
+
+    .cart-btn {
+        font-size: 23px;
+
+        margin-left: 8px;
+    }
+
+
+    /* HOME */
+
+    .home-content {
+        top: 30%;
+        left: 7%;
+    }
+
+
+    /* ABOUT */
+
+    .aboutPage {
+        flex-direction: column;
+
+        padding: 50px 20px;
+    }
+
+    .abouttext {
+        width: 100%;
+    }
+
+    .story {
+        line-height: 1.7;
+    }
+
+    .img-story {
+        width: 100%;
+        max-width: 400px;
+
+        height: 350px;
+
+        margin: 30px 0 0;
+    }
+
+
+    /* MISSION */
+
+    .missionPage {
+        flex-direction: column;
+
+        padding: 50px 20px;
+    }
+
+    .img-mission {
+        width: 100%;
+        max-width: 350px;
+
+        height: 300px;
+
+        margin-left: 0;
+    }
+
+    .misson {
+        width: 100%;
+
+        margin: 30px 0 0;
+    }
+
+    .mission1 {
+        line-height: 1.7;
+    }
+}
+
+/* CONTACT - PHONE */
+#contact {
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 40px;
+}
+
+.contact-body {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-body h2 {
+    font-size: 32px;
+}
+
+.contact-body p {
+    font-size: 16px;
+}
+
+.contact-us {
+    width: 100%;
+    padding: 25px;
+}
+
+.contact-us h2 {
+    font-size: 28px;
+}

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee-Yarn</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <img src="logo.png" class="logo">
+
+        <p>Coffee-Yarn</p>
+
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        
+        <div class="menu-dropdown">
+            <a href="#menu">MENU</a>
+
+            <div class="dropdown-content">
+                <a href="#coffee">Coffee</a>
+                <a href="#snacks">Snacks</a>
+                <a href="#pasta">Pasta</a>
+                <a href="#lightMeals">Light Meal</a>
+            </div>
+        </div>
+
+        <a href="#contact">CONTACT</a>
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section id="home">
+
+        <img src="bghome.png" class="imghome">
+
+        <div class="home-content">
+
+            <p class="wel">
+                Welcome to
+            </p>
+
+            <p class="name">
+                Coffee-Yarn
+            </p>
+
+            <p class="des">
+                Coffee, conversations, and good vibes.
+            </p>
+
+            <button onclick="document.getElementById('menu').scrollIntoView()" class="home-btn">
+                ORDER NOW
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="aboutPage" id="about">
+
+        <div class="abouttext">
+
+            <h2>OUR STORY</h2>
+
+            <p class="story">
+                Coffee-Yarn is a cozy coffee shop where people can enjoy
+                their favorite coffee while having good conversations.
+                The name combines coffee and “yarn,” representing the
+                simple conversations and stories shared over a cup of coffee.
+            </p>
+
+        </div>
+
+        <img src="about1.png" class="img-story">
+
+    </section>
+
+
+    <!-- =========================
+         MISSION
+    ========================== -->
+
+    <section class="missionPage">
+
+        <img src="mission2.png" class="img-mission">
+
+        <div class="misson">
+
+            <h1>MISSION</h1>
+
+            <p class="mission1">
+                Our mission is to provide quality coffee and a comfortable
+                place where customers can relax, connect, and enjoy meaningful
+                conversations with friends and loved ones.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="menu"  class="menuPage">
+        <section id="coffee"  class="menuPage">
+
+    <h2>OUR MENU</h2>
+
+    <div class="menu-container">
+
+        <!-- SPANISH LATTE -->
+        <div class="line1">
+
+            <div class="image-container">
+                <img src="spanish.png">
+
+                <div class="image-info">
+                    <h3>Spanish Latte</h3>
+                    <p>Made with rich espresso, creamy milk, and sweet condensed milk, creating a smooth, sweet, and creamy coffee with a deliciously balanced flavor. </p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Spanish Latte', 120)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Spanish Latte</p>
+                <p class="price">₱120</p>
+            </div>
+
+        </div>
+
+
+        <!-- MATCHA -->
+        <div class="line1">
+
+            <div class="image-container">
+                <img src="matcha.png">
+
+                <div class="image-info">
+                    <h3>Matcha Latte</h3>
+                    <p>Made with premium matcha powder, creamy milk, and a touch of sweetness, creating a smooth, refreshing, and flavorful drink with a rich matcha taste.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Matcha Latte', 130)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Matcha Latte</p>
+                <p class="price">₱130</p>
+            </div>
+
+        </div>
+
+
+        <!-- CARAMEL MACCHIATO -->
+        <div class="line1">
+
+            <div class="image-container">
+                <img src="caramel.png">
+
+                <div class="image-info">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Made with rich espresso, creamy milk, smooth vanilla, and sweet caramel drizzle, creating a deliciously balanced coffee with a creamy texture and a sweet caramel finish.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Caramel Macchiato', 115)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Caramel Macchiato</p>
+                <p class="price">₱115</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- LINE TWO -->
+    <div class="cantainer1">
+        <!-- Salted Caramel Latte -->
+        <div class="line2">
+
+            <div class="image-container">
+                <img src="saltedCarm.png">
+
+                <div class="image-info">
+                    <h3>Salted Caramel Latte</h3>
+                    <p>Made with rich espresso, creamy milk, and smooth salted caramel, creating a perfect balance of sweetness and a light salty flavor for a smooth and satisfying coffee experience.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Salted Caramel Latte', 120)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Salted Caramel Latte</p>
+                <p class="price">₱120</p>
+            </div>
+
+        </div>
+
+        <!-- Vanilla Latte -->
+        <div class="line2">
+
+            <div class="image-container">
+                <img src="vamilla.png">
+
+                <div class="image-info">
+                    <h3>Vanilla Latte</h3>
+                    <p>Made with rich espresso, creamy milk, and smooth vanilla syrup, creating a sweet, creamy, and comforting coffee with a deliciously smooth vanilla flavor.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Vanilla Latte', 120)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Vanilla Latte</p>
+                <p class="price">₱120</p>
+            </div>
+
+        </div>
+
+        <!-- White Chocolate Mocha -->
+        <div class="line2">
+
+            <div class="image-container">
+                <img src="wcho.png">
+
+                <div class="image-info">
+                    <h3>White Chocolate Mocha</h3>
+                    <p>Made with rich espresso, creamy milk, and smooth white chocolate, creating a sweet and velvety coffee with a rich chocolate flavor and a creamy finish.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('White Chocolate Mocha', 150)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">White Chocolate Mocha</p>
+                <p class="price">₱150</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- LINE THREE-->
+     <div class="container2">
+        <!-- Hazelnut Latte-->
+         <div class="line3">
+            <div class="image-container">
+                <img src="hezelnut.png">
+
+                <div class="image-info">
+                    <h3>Hazelnut Latte</h3>
+                    <p>Made with rich espresso, creamy milk, and smooth hazelnut syrup, creating a warm and nutty flavor with a sweet, creamy taste and a deliciously smooth finish.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Hazelnut Latte', 125)">+</button>
+            </div>
+            <div class="product-info">
+                <p class="coffee">Hazelnut Latte</p>
+                <p class="price">₱125</p>
+
+            </div>
+         </div>
+
+         <!-- Americano -->
+          <div class="line3">
+            <div class="image-container">
+                <img src="americ.png">
+
+                <div class="image-info">
+                    <h3>Americano</h3>
+                    <p>Made with rich espresso and hot water, creating a smooth and bold coffee with a strong aroma, balanced flavor, and a clean, satisfying finish.<p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Americano', 110)">+</button>
+            </div>
+            <div class="product-info">
+                <p class="coffee">Americano</p>
+                <p class="price">₱110</p>
+            </div>
+          </div>
+
+          <!-- Crema & Cream-->
+            <div class="line3">
+            <div class="image-container">
+                <img src="Crema & Cream.png">
+
+                <div class="image-info">
+                    <h3>Crema & Cream</h3>
+                    <p>---- Coffee Roasters ---</p>
+                    <p>Made with smooth, rich coffee and a layer of creamy foam, creating a silky and balanced drink with a bold coffee flavor and a soft, creamy finish.<p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Crema & Cream', 120)">+</button>
+            </div>
+            <div class="product-info">
+                <p class="coffee">Crema & Cream</p>
+                <p class="price">₱120</p>
+            </div>
+          </div>    
+     
+
+
+        <section id="snacks" class="menuPage">
+            <h2 style="margin-top: 100px;">Snack Section</h2>
+
+            <div class="menu-container">
+       
+        
+        
+            <div class="line1">
+
+                    <div class="image-container">
+                        <img src="cokie.webp">
+
+                    <div class="image-info">
+                        <h3>Chocolate-Filled Cookie</h3>
+                        <p>Soft and buttery cookie filled with rich, creamy chocolate inside, creating a delicious combination of a slightly crisp outside and a sweet, chocolatey center.</p>
+                        </div>
+
+                    <button class="add-btn" onclick="addToCart('Chocolate-Filled Cookie', 15)">+</button>
+                </div>
+
+                <div class="product-info">
+                    <p class="coffee">Chocolate-Filled Cookie</p>
+                    <p class="price">₱15</p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="line1">
+
+                <div class="image-container">
+                    <img src="croissant.webp">
+
+                <div class="image-info">
+                    <h3>Croisssant</h3>
+                    <p>Buttery and freshly baked croissant with a light, flaky outside and a soft, warm center, making it a simple and delicious snack that pairs perfectly with coffee.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Croisssant', 25)">+</button>
+                </div>
+
+                <div class="product-info">
+                    <p class="coffee">Croissant</p>
+                    <p class="price">₱25</p>
+                </div>
+
+            </div>
+
+
+            <div class="line1">
+
+                <div class="image-container">
+                    <img src="donut.jpg">
+
+                <div class="image-info">
+                    <h3>Chocolate Donut</h3>
+                    <p>Soft and fluffy donut coated with rich chocolate glaze, creating a sweet, smooth, and delicious treat that pairs perfectly with coffee.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Chocolate Donut', 35)">+</button>
+                </div>
+
+                <div class="product-info">
+                    <p class="coffee">Chocolate Donut</p>
+                    <p class="price">₱35</p>
+                </div>
+
+            </div>
+
+
+            <div class="line1">
+
+                <div class="image-container">
+                    <img src="brownie.jpg">
+
+                <div class="image-info">
+                    <h3>Chocolate Brownie</h3>
+                    <p>Rich and fudgy chocolate brownie with a soft, chewy texture and a deep chocolate flavor, making it a sweet and satisfying treat that pairs perfectly with coffee.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Chocolate Brownie', 100)">+</button>
+                </div>
+
+                <div class="product-info">
+                    <p class="coffee">Chocolate Brownie</p>
+                    <p class="price">₱100</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="line1">
+
+                <div class="image-container">
+                    <img src="waffle.webp">
+
+                <div class="image-info">
+                    <h3>Waffle</h3>
+                    <p>Freshly baked waffle with a lightly crispy outside and a soft, fluffy center, topped with sweet syrup for a delicious and satisfying snack that pairs perfectly with coffee.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Waffle', 50)">+</button>
+                </div>
+
+                <div class="product-info">
+                    <p class="coffee">Waffle</p>
+                    <p class="price">₱50</p>
+                </div>
+
+             </div>
+
+
+            <div class="line1">
+
+                <div class="image-container">
+                    <img src="pretzel.jpg">
+
+                <div class="image-info">
+                    <h3>Pretzel</h3>
+                    <p>Soft and freshly baked pretzel with a slightly crispy outside and a warm, chewy center, finished with a light sprinkle of salt for a simple and satisfying snack that pairs perfectly with coffee.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Pretzel', 80)">+</button>
+                </div>
+
+                <div class="product-info">
+                    <p class="coffee">Pretzel</p>
+                    <p class="price">₱80</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="pasta" class="menuPage">
+
+        <h2 style="margin-top: 100px;">Pasta</h2>
+            <div class="menu-container">
+
+        <div class="line1">
+            <div class="image-container">
+                <img src="carbonara.jpg">
+
+                <div class="image-info">
+                    <h3>Creamy Carbonara</h3>
+                    <p>Creamy pasta tossed in a rich and smooth white sauce with savory bacon, creating a deliciously creamy and satisfying meal.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Creamy Carbonara', 130)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Craemy Carbonara</p>
+                <p class="price">₱130</p>
+            </div>
+        </div>
+
+        <div class="line1">
+            <div class="image-container">
+                <img src="spag.jpg">
+
+                <div class="image-info">
+                    <h3>Spaghetti Bolognese</h3>
+                    <p>Tender spaghetti topped with rich tomato-based meat sauce, creating a savory, flavorful, and comforting pasta dish.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Spaghetti Bolognese', 140)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Spaghetti Bolognese</p>
+                <p class="price">₱140</p>
+            </div>
+        </div>
+
+
+        <div class="line1">
+
+            <div class="image-container">
+                <img src="pest.jpg">
+
+                <div class="image-info">
+                    <h3>Pesto Pasta</h3>
+                    <p>Fresh pasta tossed in creamy basil pesto sauce with a rich, herby flavor, creating a light and flavorful meal.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Pesto Pasta', 120)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Pesto Pasta</p>
+                <p class="price">₱120</p>
+            </div>
+        </div>
+
+        <div class="line1">
+
+            <div class="image-container">
+                <img src="garlic.jpg">
+
+                <div class="image-info">
+                    <h3>Creamy Garlic Pasta</h3>
+                    <p>Tender pasta coated in a smooth and creamy garlic sauce, creating a rich, savory, and deliciously comforting dish.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Creamy Garlic Pasta', 130)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Creamy Garlic Pasta</p>
+                <p class="price">₱130</p>
+            </div>
+        </div>
+
+        <div class="line1">
+
+            <div class="image-container">
+                <img src="alfred.jpg">
+
+                <div class="image-info">
+                    <h3>Chicken Alfredo</h3>
+                    <p>Tender pasta topped with creamy Alfredo sauce and juicy chicken, creating a rich, smooth, and satisfying meal.</p>
+                </div>
+
+                <button class="add-btn" onclick="addToCart('Chicken Alfredo', 150)">+</button>
+            </div>
+
+            <div class="product-info">
+                <p class="coffee">Chicken Alfredo</p>
+                <p class="price">₱150</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+        <section id="lightMeals" class="menuPage">
+
+        <h2 style="margin-top: 100px;">Light Meals</h2>
+            <div class="menu-container">
+
+                <div class="line1">
+
+                    <div class="image-container">
+                    <img src="chef.jpg">
+
+                    <div class="image-info">
+                        <h3>Chicken & Fries</h3>
+                        <p>Crispy and juicy chicken served with golden fries, creating a delicious and satisfying meal with a perfect combination of savory flavors.</p>
+                    </div>
+
+                        <button class="add-btn" onclick="addToCart('Chicken & Fries', 100)">+</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="coffee">Chicken & Fries</p>
+                        <p class="price">₱100</p>
+                    </div>
+                </div>
+
+
+                <div class="line1">
+
+                    <div class="image-container">
+                    <img src="tebder.jpg">
+
+                    <div class="image-info">
+                        <h3>Chicken Tenders</h3>
+                        <p>Tender strips of juicy chicken coated in a crispy golden breading, served as a flavorful and satisfying snack or light meal.</p>
+                    </div>
+
+                        <button class="add-btn" onclick="addToCart('Chicken Tenders', 70)">+</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="coffee">Chicken Tenders</p>
+                        <p class="price">₱70</p>
+                    </div>
+                </div>
+
+
+
+                <div class="line1">
+
+                    <div class="image-container">
+                    <img src="meals.jpg">
+
+                    <div class="image-info">
+                        <h3>Mozzarella Sticks</h3>
+                        <p>Crispy breaded mozzarella filled with warm, melted cheese, creating a deliciously cheesy and satisfying snack </p>
+                    </div>
+
+                        <button class="add-btn" onclick="addToCart('Mozzarella Sticks',60)">+</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="coffee">Mozzarella Sticks</p>
+                        <p class="price">₱60</p>
+                    </div>
+                </div>
+
+
+
+                <div class="line1">
+
+                    <div class="image-container">
+                    <img src="loaded.jpg">
+
+                    <div class="image-info">
+                        <h3>Loaded Fries</h3>
+                        <p>Golden crispy fries topped with savory cheese and flavorful toppings, creating a rich, delicious, and satisfying snack.</p>
+                    </div>
+
+                        <button class="add-btn" onclick="addToCart('Loaded Fries', 110)">+</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="coffee">Loaded Fries</p>
+                        <p class="price">₱110</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="contact">
+
+    <div class="contact-body">
+        <h2>Let's Have a Coffee & Yarn!</h2>
+        <p>
+            Have questions, suggestions, or want to know more about our drinks?
+            Feel free to send us a message. We'd love to hear from you!
+        </p>
+
+        <p>📍 Las Piñas City, Philippines</p>
+        <p>📞 0912-345-6789 / 0948-008-1564</p>
+        <p>✉️ coffeeyarn@gmail.com</p>
+        <p>🕐 Open Daily: 8:00 AM - 10:00 PM</p>
+        <br>
+        
+
+    <div class="social-media">
+
+        <h2>OUR SOCIAL MEDIA</h2>
+
+            <div class="social-top">
+
+            <div class="social-item">
+                <img src="facebook.png">
+                <a href="https://www.facebook.com/" class="social-link" target="_blank">Coffee-Yarn</a>
+            </div>
+
+            <div class="social-item">
+                <img src="tiktok.png">
+                <a href="https://www.tiktok.com/en/" class="social-link" target="_blank">CoffeeYarn</a>
+            </div>
+
+        </div>
+
+            <div class="social-bottom">
+                <div class="social-item">
+                    <img src="insta.jpg">
+                    <a href="https://www.instagram.com/?hl=en" class="social-link" target="_blank">coffeeeyarn_</a>
+                </div>
+            </div>
+
+    </div>
+        
+    </div>
+
+    <form class="contact-us">
+        <h2>Contact Us</h2>
+
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button>Send Message</button>
+    </form>
+        
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- =========================
+         CART
+    ========================== -->
+    <div class="cart-box" id="cartBox">
+        <button class="close-cart" onclick="closeCart()">×</button>
+
+        <h2>YOUR CART</h2>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+            <h3>Total: ₱<span id="cartTotal">0</span></h3>
+        </div>
+
+        <button class="checkout-btn" type="button" onclick="checkout()">CHECKOUT</button>
+    </div>
+
+    <!-- ORDER SUCCESS -->
+    <div class="order-success" id="orderSuccess">
+        <div class="success-box">
+            <h2>Order Done!</h2>
+            <p>Your order is done!</p>
+            <p>Please wait for your order.</p>
+
+            <button onclick="closeSuccess()">OK</button>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="func.js"></script>
+
+</body>
+
+</html>
